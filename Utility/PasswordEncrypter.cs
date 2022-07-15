@@ -21,7 +21,7 @@ namespace EsercitazioneAPI.Utility
         
         public string GetSalt()
         {
-            return _configuration["WebApp:Salt"];
+            return _configuration["WebApi:Salt"];
         }
     }
 }
