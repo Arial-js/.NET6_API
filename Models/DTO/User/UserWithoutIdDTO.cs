@@ -1,8 +1,9 @@
-﻿using Newtonsoft.Json;
+﻿using Dotnet6_API.Models.User;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using System.ComponentModel.DataAnnotations;
 
-namespace EsercitazioneAPI.Models.DTO
+namespace Dotnet6_API.Models.DTO.User
 {
     public class UserWithoutIdDTO
     {

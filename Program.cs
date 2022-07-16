@@ -7,9 +7,9 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.OpenApi.Models;
-using EsercitazioneAPI.Models;
-using EsercitazioneAPI.Models.DTO;
 using EsercitazioneAPI.Service;
+using Dotnet6_API.Models.User;
+using Dotnet6_API.Models.DTO.User;
 
 var builder = WebApplication.CreateBuilder(args);
 var Configuration = builder.Configuration;

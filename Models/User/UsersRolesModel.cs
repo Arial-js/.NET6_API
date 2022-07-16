@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace EsercitazioneAPI.Models
+namespace Dotnet6_API.Models.User
 {
     public enum UsersRolesModel
     {

@@ -1,6 +1,6 @@
-﻿using EsercitazioneAPI.Exceptions;
+﻿using Dotnet6_API.Models.User;
+using EsercitazioneAPI.Exceptions;
 using EsercitazioneAPI.Interfaces;
-using EsercitazioneAPI.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EsercitazioneAPI.Service

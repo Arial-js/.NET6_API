@@ -1,4 +1,4 @@
-﻿using EsercitazioneAPI.Models;
+﻿using Dotnet6_API.Models.User;
 using Microsoft.EntityFrameworkCore;
 
 namespace EsercitazioneAPI.Database

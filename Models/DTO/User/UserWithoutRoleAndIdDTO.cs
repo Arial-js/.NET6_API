@@ -1,10 +1,18 @@
 ﻿using Newtonsoft.Json;
 using System.ComponentModel.DataAnnotations;
 
-namespace EsercitazioneAPI.Models.DTO
+namespace Dotnet6_API.Models.DTO.User
 {
-    public class LoginDTO
+    public class UserWithoutRoleAndIdDTO
     {
+        [Required(ErrorMessage = "Name is required")]
+        [JsonProperty("name")]
+        public string Name { get; set; }
+
+        [Required(ErrorMessage = "LastName is required")]
+        [JsonProperty("lastname")]
+        public string LastName { get; set; }
+
         [Required(ErrorMessage = "Email is required")]
         [RegularExpression(@"^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$", ErrorMessage = "Email is not valid.")]
         [JsonProperty("email")]

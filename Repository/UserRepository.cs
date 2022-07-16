@@ -1,9 +1,9 @@
 ﻿using EsercitazioneAPI.Database;
-using EsercitazioneAPI.Models;
 using EsercitazioneAPI.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using EsercitazioneAPI.Models.DTO;
 using AutoMapper;
+using Dotnet6_API.Models.User;
 
 namespace EsercitazioneAPI.Repository
 {

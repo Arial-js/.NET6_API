@@ -5,7 +5,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using System.Security.Claims;
 using System.IdentityModel.Tokens.Jwt;
-using EsercitazioneAPI.Models.DTO;
+using Dotnet6_API.Models.DTO.User;
 
 namespace EsercitazioneAPI.Controllers
 {
