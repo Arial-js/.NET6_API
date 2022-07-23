@@ -1,5 +1,4 @@
-﻿using EsercitazioneAPI.Models;
-using EsercitazioneAPI.Interfaces;
+﻿using Dotnet6_API.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
@@ -7,7 +6,7 @@ using System.Security.Claims;
 using System.IdentityModel.Tokens.Jwt;
 using Dotnet6_API.Models.DTO.User;
 
-namespace EsercitazioneAPI.Controllers
+namespace Dotnet6_API.Controllers
 {
     [ApiController]
     [Route("api/token")]
@@ -50,7 +49,7 @@ namespace EsercitazioneAPI.Controllers
                     new Claim(ClaimTypes.Email, user.Email),
                     new Claim(ClaimTypes.Role, user.Role.ToString()),
                 };
-                //creazione Token
+                //Token Creation
                 var tokenOptions = new JwtSecurityToken(
                     issuer: _configuration["JWT:Issuer"],
                     audience: _configuration["JWT:Audience"],

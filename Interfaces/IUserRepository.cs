@@ -1,7 +1,7 @@
 ﻿using Dotnet6_API.Models.User;
 using Microsoft.AspNetCore.Mvc;
 
-namespace EsercitazioneAPI.Interfaces
+namespace Dotnet6_API.Interfaces
 {
     public interface IUserRepository
     {

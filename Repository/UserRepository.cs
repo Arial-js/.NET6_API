@@ -1,11 +1,11 @@
-﻿using EsercitazioneAPI.Database;
-using EsercitazioneAPI.Interfaces;
+﻿using Dotnet6_API.Database;
+using Dotnet6_API.Interfaces;
 using Microsoft.EntityFrameworkCore;
-using EsercitazioneAPI.Models.DTO;
+using Dotnet6_API.Models.DTO.User;
 using AutoMapper;
 using Dotnet6_API.Models.User;
 
-namespace EsercitazioneAPI.Repository
+namespace Dotnet6_API.Repository
 {
     public class UserRepository : IUserRepository
     {
@@ -24,7 +24,7 @@ namespace EsercitazioneAPI.Repository
 
         public async Task<UsersModel> GetByEmail(string email)
         {
-            return await _dbContext.Users.FirstOrDefaultAsync(u => u.Email == email);
+            return await _dbContext.Users.Where(u => u.Email == email).FirstOrDefaultAsync();
         }
 
         public async Task<IEnumerable<UsersModel>> GetAll()

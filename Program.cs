@@ -1,13 +1,13 @@
-using EsercitazioneAPI.Database;
-using EsercitazioneAPI.Repository;
-using EsercitazioneAPI.Interfaces;
+using Dotnet6_API.Database;
+using Dotnet6_API.Repository;
+using Dotnet6_API.Interfaces;
 using Microsoft.EntityFrameworkCore;
-using EsercitazioneAPI.Utility;
+using Dotnet6_API.Utility;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.OpenApi.Models;
-using EsercitazioneAPI.Service;
+using Dotnet6_API.Service;
 using Dotnet6_API.Models.User;
 using Dotnet6_API.Models.DTO.User;
 
@@ -69,7 +69,7 @@ builder.Services.AddSwaggerGen(option =>
                     Id = "Bearer"
                 }
             },
-            new string[] {}
+            Array.Empty<string>()
         }
     });
 });

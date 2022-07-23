@@ -1,8 +1,8 @@
-﻿using EsercitazioneAPI.Interfaces;
+﻿using Dotnet6_API.Interfaces;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace EsercitazioneAPI.Utility
+namespace Dotnet6_API.Utility
 {
     public class PasswordEncrypter : IPasswordEncrypter
     {

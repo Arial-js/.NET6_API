@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "EsercitazioneAPI": {
+    "Dotnet6_API": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

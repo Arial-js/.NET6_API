@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace EsercitazioneAPI.Migrations
+namespace Dotnet6_API.Migrations
 {
     public partial class EnumChange : Migration
     {

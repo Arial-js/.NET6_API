@@ -20,11 +20,13 @@ namespace Dotnet6_API.Models.User
 
         [Required(ErrorMessage = "Email is required")]
         [RegularExpression(@"^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$", ErrorMessage = "Email is not valid.")]
+        [DataType(DataType.EmailAddress)]
         [JsonProperty("email")]
         public string Email { get; set; }
 
         [Required(ErrorMessage = "Password is required")]
         [MinLength(4, ErrorMessage = "Password must be at least 4 characters")]
+        [DataType(DataType.Password)]
         [JsonProperty("password")]
         public string Password { get; set; }
 

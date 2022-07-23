@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace EsercitazioneAPI.Exceptions
+namespace Dotnet6_API.Exceptions
 {
     [Serializable]
     public class DuplicateEmailException : Exception

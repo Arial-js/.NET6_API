@@ -1,7 +1,7 @@
 ﻿using Dotnet6_API.Models.User;
 using Microsoft.EntityFrameworkCore;
 
-namespace EsercitazioneAPI.Database
+namespace Dotnet6_API.Database
 {
     public class ApiDbContext : DbContext
     {

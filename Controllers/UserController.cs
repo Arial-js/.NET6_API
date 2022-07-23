@@ -1,12 +1,12 @@
-﻿using EsercitazioneAPI.Interfaces;
+﻿using Dotnet6_API.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
-using EsercitazioneAPI.Exceptions;
+using Dotnet6_API.Exceptions;
 using AutoMapper;
 using Dotnet6_API.Models.User;
 using Dotnet6_API.Models.DTO.User;
 
-namespace EsercitazioneAPI.Controllers
+namespace Dotnet6_API.Controllers
 {
     [Authorize]
     [ApiController]

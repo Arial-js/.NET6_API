@@ -1,4 +1,4 @@
-﻿namespace EsercitazioneAPI.Interfaces
+﻿namespace Dotnet6_API.Interfaces
 {
     public interface IPasswordEncrypter
     {

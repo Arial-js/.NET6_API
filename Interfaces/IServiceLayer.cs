@@ -1,6 +1,6 @@
 ﻿using Dotnet6_API.Models.User;
 
-namespace EsercitazioneAPI.Interfaces
+namespace Dotnet6_API.Interfaces
 {
     public interface IServiceLayer
     {

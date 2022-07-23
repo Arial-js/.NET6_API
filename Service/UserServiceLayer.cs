@@ -1,9 +1,9 @@
 ﻿using Dotnet6_API.Models.User;
-using EsercitazioneAPI.Exceptions;
-using EsercitazioneAPI.Interfaces;
+using Dotnet6_API.Exceptions;
+using Dotnet6_API.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
-namespace EsercitazioneAPI.Service
+namespace Dotnet6_API.Service
 {
     public class UserServiceLayer : IServiceLayer
     {
@@ -33,7 +33,7 @@ namespace EsercitazioneAPI.Service
 
         public async Task<UsersModel> CreateAsync(UsersModel user)
         {
-            if(GetByEmailAsync(user.Email) != null)
+            if(await GetByEmailAsync(user.Email) != null)
             {
                 throw new DuplicateEmailException(); 
             }
@@ -45,7 +45,7 @@ namespace EsercitazioneAPI.Service
 
         public async Task<UsersModel> CreateAsAdminAsync(UsersModel user)
         {
-            if (GetByEmailAsync(user.Email) != null)
+            if (await GetByEmailAsync(user.Email) != null)
             {
                 throw new DuplicateEmailException();
             }
